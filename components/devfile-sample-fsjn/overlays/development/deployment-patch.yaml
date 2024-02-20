@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-fsjn
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0071-tenant/tkrw-pr714-0075-0071-app/devfile-sample-fsjn@sha256:2ee379ef1c9e03721b0bf32be44891c1909091a16f94d460d10b2c704e58267d
+        name: my-nodejs
+        resources: {}
+status: {}
